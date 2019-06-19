@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 10px;
+    background: white;
+    font-size: 13px;
+    font-weight: 350;
+    line-height: 1.5;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: lowercase;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: white;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.fakeimg2 {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#home {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#portfolio {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#kerttu {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding: 10px;
+    
+}
+.grid-item {
+  background-color: white;
+  border: 1px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bike {
+    width: 300px;
+    border-radius: 80%;
+}
+
+.moodboard1 {
+    
+    width: 400px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

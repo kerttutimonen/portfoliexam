@@ -1,0 +1,479 @@
+html {
+
+    height: 100%;
+    margin: 0;
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+
+
+    body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
+
+    .header {
+
+        margin: auto;
+        height: 296px;
+        margin-bottom: 10px;
+
+    }
+
+
+
+    .me {
+        background-image: url("kerttu.jpg");
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    .me-text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+
+
+
+
+    .nav {
+        background-color: #D39C6A;
+        margin: auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        max-width: 667px;
+        
+
+
+
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: auto;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+
+    }
+    
+
+    .nav a:hover {
+        background-color: #ddd;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    h2 {
+        text-transform: lowercase;
+         color: grey;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        display: block;
+        background-color: grey;
+    }
+
+    h4 {
+
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+    
+      b {
+        
+    letter-spacing: 1px;
+        color: grey;
+    }
+
+    
+       i {
+        
+    letter-spacing: 1px;
+                  color: grey;
+
+    }
+
+    p {
+
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: justify;
+
+    }
+    
+     .info {
+        text-align: center;
+    }
+    
+    .cph {
+        float: left;
+    }
+
+    #home {
+        background-color: white;
+        text-align: justify;
+    }
+
+
+
+    #myBtn {
+
+        margin: auto;
+        width: 60%;
+        margin-bottom: 20px;
+        background-color: #D39C6A;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+
+
+    }
+
+    #show {
+        display: none;
+    }
+
+
+    button {}
+
+    .button {
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+        background-color: #D39C6A;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+
+
+    }
+
+
+
+
+    #content {
+        margin: auto;
+        text-align: justify;
+        background-color: lightgrey;
+
+    }
+
+
+    #home {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #kerttu {
+        padding: 20px;
+        margin-top: 20px;
+         float: right;
+    }
+    
+    
+
+    #portfolio {
+        background-color: #ddd;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: justify;
+
+    }
+
+    
+
+
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        margin: auto;
+        display: block;
+    }
+
+
+}
+
+
+
+@media all and (min-width: 668px) {
+
+
+    body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 20%;
+        margin-right: 20%;
+
+
+    }
+
+    .header {
+
+        margin: auto;
+        height: 440px;
+        margin-bottom: 20px;
+
+
+
+    }
+
+    b {
+        
+    letter-spacing: 2px;
+        color: grey;
+    }
+
+    
+      i {
+        
+    letter-spacing: 1px;
+                  color: grey;
+
+    }
+
+
+    .me {
+        background-image: url("kerttu.jpg");
+        opacity: 0.95;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    .me-text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+
+
+
+
+    .nav {
+        background-color: #D39C6A;
+        margin: auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+
+
+
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: auto;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+
+
+
+
+
+    }
+
+    .nav a:hover {
+        background-color: #ddd;
+
+    }
+
+    h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    h2 {
+        text-transform: lowercase;
+        color: grey;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        display: block;
+        background-color: grey;
+    }
+
+    h4 {
+
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    p {
+
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: justify;
+
+    }
+    
+    .info {
+        text-align: center;
+    }
+
+    #home {
+        background-color: white;
+        text-align: justify;
+    }
+
+
+
+    #myBtn {
+
+        margin: auto;
+        width: 60%;
+        margin-bottom: 20px;
+        background-color: #D39C6A;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+
+
+    }
+
+    #show {
+        display: none;
+    }
+
+
+    button {}
+
+    .button {
+        margin: auto;
+        width: 430px;
+        height: 30px;
+        margin-bottom: 20px;
+        background-color: #D39C6A;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+
+
+    }
+
+
+
+
+    #content {
+        margin: auto;
+        text-align: justify;
+        background-color: lightgrey;
+
+    }
+
+
+    #home {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #kerttu {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #portfolio {
+        background-color: #ddd;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: justify;
+
+    }
+
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        margin: auto;
+        display: block;
+    }
+
+}

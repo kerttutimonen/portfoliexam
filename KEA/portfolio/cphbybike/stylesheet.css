@@ -1,0 +1,423 @@
+@font-face {
+    font-family: KBH;
+    src: url(fonts/KBH-Black.woff);
+}
+
+@font-face {
+    font-family: KBH-Bold;
+    src: url(fonts/KBH-Bold.eot);
+    src: url(fonts/KBH-Bold.eot?#iefix) format('embedded-opentype'),
+        url(fonts/KBH-Bold.woff2) format('woff2'),
+        url(fonts/KBH-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: KBH-Demibold;
+    src: url(fonts/KBH-Demibold.eot);
+    src: url(fonts/KBH-Demibold.eot?#iefix) format('embedded-opentype'),
+        url(fonts/KBH-Demibold.woff2) format('woff2'),
+        url(fonts/KBH-Demibold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: KBH-Thin;
+    src: url(fonts/KBH-Thin.eot);
+    src: url(fonts/KBH-Thin.eot?#iefix) format('embedded-opentype'),
+        url(fonts/KBH-Thin.woff2) format('woff2'),
+        url(fonts/KBH-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+/* general */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    font-family: KBH;
+
+}
+
+div {
+    font-family: KBH;
+}
+
+
+.padding {
+    padding: 0 100px;
+}
+
+span {
+    text-decoration: none;
+    color: #E8741B;
+}
+
+h1 {
+    font-size: 100px;
+    color: #FFF;
+    text-decoration: none;
+    top: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.h1 {
+    font-family: KBH-Bold;
+}
+
+h2 {
+    font-family: KBH-Demibold;
+    color: #000D2E;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+h3 {
+    font-family: KBH-Demibold;
+    color: #000D2E;
+    text-align: center;
+}
+
+h4 {
+    font-family: KBH-Demibold;
+    color: #000D2E;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+p {
+    font-family: KBH-Thin;
+    color: #000D2E;
+    padding: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#intro {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+a {
+    font-family: KBH-Demibold;
+    text-decoration: none;
+    color: #000D2E;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+button {
+    font-family: KBH-Bold;
+    display: flex;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#frise {
+    position: relative;
+    width: 100vw;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    z-index: -1;
+}
+
+/* HERO PANEL */
+
+.heropanel_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.logo {
+    width: 170px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    align-self: center;
+
+
+}
+
+#heroVideo {
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+}
+
+
+#button1 {
+    position: absolute;
+    bottom: 140px;
+    right: 550px;
+    color: #347F7D;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+
+
+}
+
+/* 
+<button type="button" id="button1" onclick="()">Get some tips</button>
+                    </div>
+                    <div>
+                        <button type="button" id="button2">Watch more</button>
+*/
+
+#button2 {
+    position: absolute;
+    bottom: 140px;
+    left: 550px;
+    color: white;
+    background-color: #E8741B;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+
+}
+
+
+
+/* FLEX */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rulereverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* STICKY NAVIGATION BAR */
+
+#navbar {
+    overflow: hidden;
+    background-color: white;
+    width: 100vw;
+    position: relative;
+
+}
+
+#navbar a {
+    float: left;
+    display: flex;
+    color: #000D2E;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: #347F7D;
+}
+
+#navbar a.active {
+    background-color: white;
+    color: #E8741B;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+
+
+}
+
+/* numbres, illustrations */
+
+.margine30 {
+    display: flex;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.margineleft {
+    font-family: KBH-Thin;
+    margin-left: 200px;
+}
+
+.margineright {
+    margin-right: 200px;
+}
+
+img.illustration {
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    margin-left: 100px;
+}
+
+/* bulb */
+
+.bulb {
+    background-color: #347F7D;
+    border-radius: 8px;
+    border: none;
+
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.width {
+    max-width: 60px;
+    z-index: 1;
+}
+
+.bulb h4 {
+    color: white;
+    margin-top: 0;
+}
+
+.paddingtop {
+    padding-top: 30px;
+}
+
+
+/* sections */
+
+selection {
+    display: flex;
+    justify-content: center;
+}
+
+.centre {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* trips section */
+
+a.margine30 {
+    font-size: 25px;
+    margin-top: 60px;
+    z-index: -1;
+}
+
+.trips a {
+    font-family: KBH-Demibold;
+    color: #707070;
+}
+
+.trips img {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* video */
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    border: 0;
+
+
+}
+
+
+/* footer */
+
+footer {
+    background-color: #E5E5E5;
+}
+
+footer p {
+    padding: 0;
+    font-family: KBH-Thin;
+    color: #707070;
+    margin-top: 0;
+
+}
+
+footer a {
+    color: #707070;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer h3 {
+    color: #707070;
+    margin-bottom: 5px;
+}
+
+footer img {
+    z-index: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}

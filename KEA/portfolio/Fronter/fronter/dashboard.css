@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: aioli;
+    src: url(font/HelveticaNeueLTStd-LtCn.otf);
+}
+
+@font-face {
+    font-family: tarragon;
+    src: url(font/HelveticaNeueLTStd-Bd.otf);
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+
+
+    body {
+
+        background-image: url(images/logo/bcgnwvsn.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        margin: auto;
+        overflow: scroll;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "navi"
+            "form"
+            "mainoffer"
+            "backbutton";
+
+    }
+
+    header {
+        grid-area: header;
+        text-align: center;
+
+    }
+    
+    
+    
+       ul {
+        list-style-type: none;
+        margin: auto;
+
+    }
+
+    .navi {
+        grid-area: navi;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+        position: relative;
+
+    }
+
+    li {
+        display: inline;
+        width: 10px;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    li a {
+        display: inline;
+        width: 10px;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+
+    .active {
+        text-decoration: underline;
+
+    }
+
+    .logo {
+
+        margin-top: 73px;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 40px;
+    }
+
+
+    form {
+
+        grid-area: form;
+        position: relative;
+        font-family: tarragon;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .wrapper {
+        display: grid;
+        grid-template: 239px / auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .box {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .studies {
+        background-color: #EA5045;
+        color: #FFFFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .studieslogo {
+        width: 71.3px;
+        height: 77.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    }
+
+    .general {
+        background-color: #8E7FAE;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .generallogo {
+        width: 71.3px;
+        height: 77.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    }
+
+    .alumni {
+        background-color: #6ECEB2;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+    }
+
+    .alumnilogo {
+        width: 71.24px;
+        height: 69.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+    }
+
+    .social {
+        background-color: #FDD757;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+    }
+
+    .sociallogo {
+        width: 59.08px;
+        height: 77.42px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        margin-left: 7px;
+    }
+
+    input[type=submit] {
+        align-items: center;
+        width: 313px;
+        height: 46px;
+        border-radius: 220px;
+        border: 0px;
+        background-color: white;
+        color: #707070;
+        opacity: 0.80;
+        font-family: tarragon;
+        font-size: 24px;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 60px;
+    }
+
+    #submit a {
+        color: #707070;
+    }
+
+    .returnbutton {
+        background-color: white;
+        position: relative;
+        opacity: 0.75;
+        font-size: 24px;
+        border-radius: 20px;
+        border: none;
+        height: 46px;
+        width: 313px;
+        text-align: center;
+        padding: 12px;
+        flex-direction: column;
+        color: #707070;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        display: inline-block;
+
+
+
+    }
+
+    .returnbutton a {
+        text-decoration: none;
+        color: #707070;
+
+    }
+
+
+    a:link.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #707070;
+    }
+
+    a:visited.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #707070;
+    }
+
+    a:hover.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #8E7FAE;
+    }
+
+    a:active.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #6ECEB2;
+    }
+
+
+    a:link.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:visited.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:active.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .slides
+    {
+        width: 65.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+    
+       .exercises
+    {
+        width: 50.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+       .descriptions
+    {
+        width: 60.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+        .submissions
+    {
+        width: 50.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+}
+
+
+@media only screen and (min-width: 668px) {
+
+
+    body {
+
+        background-image: url(images/logo/bcgnwvsn.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        margin: auto;
+        overflow: scroll;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "navi"
+            "form"
+            "mainoffer"
+            "backbutton";
+
+    }
+
+    header {
+        grid-area: header;
+        text-align: center;
+
+    }
+    
+    
+    
+       ul {
+        list-style-type: none;
+        margin: auto;
+
+    }
+
+    .navi {
+        grid-area: navi;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+        position: relative;
+
+    }
+
+    li {
+        display: inline;
+        width: 10px;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    li a {
+        display: inline;
+        width: 10px;
+        font-family: aioli;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+
+    .active {
+        text-decoration: underline;
+
+    }
+
+    .logo {
+
+        margin-top: 73px;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 40px;
+    }
+
+
+    form {
+
+        grid-area: form;
+        position: relative;
+        font-family: tarragon;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    .wrapper {
+        display: grid;
+        grid-template: 239px / auto auto;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .box {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .studies {
+        background-color: #EA5045;
+        color: #FFFFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .studieslogo {
+        width: 71.3px;
+        height: 77.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    }
+
+    .general {
+        background-color: #8E7FAE;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .generallogo {
+        width: 71.3px;
+        height: 77.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    }
+
+    .alumni {
+        background-color: #6ECEB2;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+    }
+
+    .alumnilogo {
+        width: 71.24px;
+        height: 69.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+    }
+
+    .social {
+        background-color: #FDD757;
+        color: #FFFF;
+        width: 161px;
+        height: 216px;
+        font-size: 18px;
+    }
+
+    .sociallogo {
+        width: 59.08px;
+        height: 77.42px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        margin-left: 7px;
+    }
+
+    input[type=submit] {
+        align-items: center;
+        width: 313px;
+        height: 46px;
+        border-radius: 220px;
+        border: 0px;
+        background-color: white;
+        color: #707070;
+        opacity: 0.80;
+        font-family: tarragon;
+        font-size: 24px;
+        display: inline-block;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 60px;
+    }
+
+    #submit a {
+        color: #707070;
+    }
+
+    .returnbutton {
+        background-color: white;
+        position: relative;
+        opacity: 0.75;
+        font-size: 24px;
+        border-radius: 20px;
+        border: none;
+        height: 46px;
+        width: 313px;
+        text-align: center;
+        padding: 12px;
+        flex-direction: column;
+        color: #707070;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        display: inline-block;
+
+
+
+    }
+
+    .returnbutton a {
+        text-decoration: none;
+        color: #707070;
+
+    }
+
+
+    a:link.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #707070;
+    }
+
+    a:visited.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #707070;
+    }
+
+    a:hover.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #8E7FAE;
+    }
+
+    a:active.getintouch {
+        font-family: tarragon;
+        text-decoration: none;
+        color: #6ECEB2;
+    }
+
+
+    a:link.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:visited.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:active.yourstudies {
+        font-family: tarragon;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .slides
+    {
+        width: 65.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+    
+       .exercises
+    {
+        width: 50.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+       .descriptions
+    {
+        width: 60.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+        .submissions
+    {
+        width: 50.3px;
+        height: 70.82px;
+        margin-bottom: 21.2px;
+        margin-top: 45px;
+        vertical-align: middle;
+    
+    }
+
+
+}

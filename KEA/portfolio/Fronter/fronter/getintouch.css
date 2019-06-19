@@ -1,0 +1,160 @@
+@font-face {
+    font-family: aioli;
+    src: url(font/HelveticaNeueLTStd-LtCn.otf);
+}
+
+@font-face {
+    font-family: tarragon;
+    src: url(font/HelveticaNeueLTStd-Bd.otf);
+}
+
+
+/* general*/
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+body {
+ 
+}
+
+body::before {
+    background-image: url(images/logo/bcgnwvsn.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat:no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -2;
+    opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: tarragon;
+
+}
+
+h2 {
+    color: white;
+    font-family: tarragon;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+
+
+
+
+.container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* logo */
+
+#logo { 
+  width: auto;
+  height: auto;
+  text-align:center;
+}
+
+#logo img {
+  display:inline-block;
+} 
+
+/* contact buttons */
+
+.contactbutton {
+    background-color: #EA5045;
+    font-size: 24px;
+    border-radius: 20px;
+    border: none;
+    width: 313px;
+    height: 46px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 12px;
+}
+
+.callicon {
+    background-image: url(images/contact-icones/call.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.emailicon {
+    background-image: url(images/contact-icones/email.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.slackicon {
+    background-image: url(images/contact-icones/slack.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+/* social media */
+
+#socialmedia {
+    align-content: space-between;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#socialmedia a {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* returnmenu */
+
+.returnbutton {
+    background-color: white;
+    opacity: 0.75;
+    font-size: 24px;
+    border-radius: 20px;
+    border: none;
+    width: 313px;
+    height: 46px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 12px;
+    flex-direction: column;
+    color: #707070;
+
+}
+

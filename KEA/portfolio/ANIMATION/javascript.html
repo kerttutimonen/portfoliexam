@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+    <title>Moomin Animation</title>
+    <meta name="description" content="Basic Animation task">
+
+    <head>
+    <style>
+        
+        
+           html {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+       
+            
+            body {
+              
+            font-family: Georgia, Times, "Times New Roman", serif;
+            color: #fff;
+            background-color: white;
+            margin: 25px;
+                
+        }
+        
+        div {
+            
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid black;
+    float: left;
+    margin-right: 10px;
+    
+        }
+            
+        
+        .move {<
+            animation-name: move ;
+            animation-duration: 10s;
+         
+        }
+        
+        
+        @keyframes move {
+            from {transform: translateX(0px);}
+            to {transform: translateX(900px);}
+                
+            }
+        
+        @keyframes onejump {
+            0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+            40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+            100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+            }
+        .onejump {
+        transform-origin: 50% 50%;
+        animation: onejump .5s linear;
+            }
+        
+
+        @keyframes jumping {
+            0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+            40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+            100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+            }
+        .jumping {
+            transform-origin: 50% 50%;
+            animation: jumping .5s linear alternate infinite;
+            }
+        
+   .fade {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+        
+        .mirror {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+            animation: mirror;
+}
+        
+        
+        @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+        
+        .shake {
+            animation: shake 1.0s; 
+                }
+        
+        
+                .moveto30 {
+            animation-name: move ;
+            animation-duration: 10s;
+         
+        }
+        
+  
+        
+    </style>
+        </head>
+   
+    <body>
+        
+        <input value="Move" type="button" onclick="move()"/>
+        <input value="One jump" type="button" onclick="onejump()"/>
+        <input value="Jumping" type="button" onclick="jumping()"/>
+        <input value="Fade" type="button" onclick="fade()"/>
+        <input value="Mirror" type="button" onclick="mirror()"/>
+        <input value="Shake" type="button" onclick="shake()"/>
+        <input value="Move To 30" type="button" onclick="moveto30()"/>
+
+
+    
+  <div>
+          
+    
+      <img src="http://kerttu.dk/KEA/Animation/Tumblr_static_tumblr_n2pxhtodc91qk9u4so1_500.png" id="moomin" alt="moomin" class="moomin picture" width="30%">
+
+      
+        </div> 
+        
+        
+
+      
+        <script>
+                    
+        
+          /*MOVE*/
+            
+    function move() {
+    document.getElementById('moomin').className = 'move';
+}     
+        
+             /*ONEJUMP*/
+            
+    function onejump() {
+    document.getElementById('moomin').className = 'onejump';
+}     
+            
+              /*JUMPING*/
+            
+    function jumping() {
+    document.getElementById('moomin').className = 'jumping';
+}     
+          
+            /*FADE*/
+            
+    function fade() {
+    document.getElementById('moomin').className = 'fade';
+}     
+                
+            /*MIRROR*/
+            
+    function mirror() {
+    document.getElementById('moomin').className = 'mirror';
+}     
+                   
+            /*SHAKE*/
+            
+    function shake() {
+    document.getElementById('moomin').className = 'shake';
+}     
+    
+                      /*MOVETO30*/
+            
+    function moveto30() {
+    document.getElementById('moomin').className = 'moveto30';
+}    
+            
+            
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
